@@ -1,8 +1,15 @@
 body, main {display:flex;
+     background-color: rgb(56, 54, 50);
+    color:azure;
 }
-body {flex-direction: column;}
-main {flex-direction: row; flex:auto;}
+header {border:2px; border-style:groove;padding-left:2%}
+body {flex-direction: column;
+}
+main {flex-direction: row; flex:auto;
+border:2px; border-style: groove;}
 article{ flex:2;
-overflow-y: auto;}
+overflow-y: auto; 
+}
 aside {flex:1;
-overflow-y: auto;}
+overflow-y: auto; color:rgb(14, 15, 15);
+}
