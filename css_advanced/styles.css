@@ -1,0 +1,483 @@
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Section */
+.hero-section {
+    background-image: url('./Images/Object.png'); /* Placeholder for the background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .logo img {
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.hero-subtext {
+    margin-bottom: 40px;
+}
+
+.hero-subtext button {
+    font-size: 0.8rem;
+    font-weight: 300;
+    align-self: center;
+}
+
+.mood a{
+    display: flexbox;
+    padding: 240px 50px 0px 50px;
+    
+}
+
+.prof-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.prof-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+
+.prof-item .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.prof-item p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.prof-item span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Purple Section */
+.purple-section {
+    background-color: #9b59b6; /* A shade of purple */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.purple-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.purple-text p{
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.purple-text .author {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Most Popular Tutorials Section */
+.tutorials-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tutorials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tutorial-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tutorial-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-info .author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.author-info span {
+    font-weight: bold;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #f1c40f; /* Star color */
+}
+
+.rating .fas.fa-star {
+    font-size: 1rem;
+}
+
+.rating span {
+    font-size: 0.9rem;
+    color: #666;
+    margin-left: auto; /* Pushes the time to the right */
+}
+
+/* Free Membership Section */
+.membership-section {
+    background-color: #4a2d8a; /* Dark blue from header */
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.membership-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.membership-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.membership-item .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #9b59b6; /* Purple accent */
+}
+
+.membership-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.membership-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.register-button {
+    background-color: #9b59b6; /* Purple button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #8e44ad;
+}
+
+/* F.A.Q. Section */
+.faq-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #4a2d8a; /* Dark blue */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+   justify-self: center;
+    max-width: 1200px;
+    gap: 600px;
+}
+
+
+.footer-content .logo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-basis: 0%;
+}
+
+.footer-content .logo img {
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .prof-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .purple-content {
+        flex-direction: column;
+    }
+
+    .tutorial-grid,
+    .membership-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-column {
+        gap: 20px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-self: center;
+        max-width: 1200px;
+        gap: 250px;
+
+    }
+} /* <-- Close the 768px media query block */
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtext p {
+        font-size: 1rem;
+    }
+
+    .tutorials-section h2,
+    .membership-section h2,
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .tutorial-card,
+    .membership-item,
+    .faq-item {
+        padding: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-self: center;
+        max-width: 1200px;
+        gap: 120px;
+    }
+
+}
